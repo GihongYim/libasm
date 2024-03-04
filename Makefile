@@ -12,3 +12,5 @@ ALL : $(SRCS)
 clean : $(OBJS) $(NAME)
 	rm $(OBJS) $(NAME)
 
+
+

@@ -2,13 +2,11 @@
             extern  _puts
 
             section .text
-_main:
-            sub     rsp, 8
-            mov     rbx, rdi
+
+_main:      push    rbx
             lea     rdi, [rel message]
             call    _puts
-            mov     rdi, rbx
-            add     rsp, 8
+            pop     rbx
             ret
 
             section .data

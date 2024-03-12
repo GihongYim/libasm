@@ -7,13 +7,14 @@ LSYSTEM = -lSystem
 LDFLAG = -macosx_version_min 10.15 -e main
 
 SRCS = ft_strlen.s \
-		ft_strcpy.s
+		ft_strcpy.s \
+		ft_write.s
 OBJS = $(SRCS:.s=.o)
 
 AR = ar
 ARFLAGS = rcs
 
-all : $(NAME)
+all : $(NAME) $(SRCS)
 
 bonus:
 	make WITH_BONUS=1 all

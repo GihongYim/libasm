@@ -9,5 +9,8 @@ int main(void)
     ft_strcpy(dst, str);
     printf("%s\n", dst);
     free(dst);
+    char a[] = "qwer";
+    ft_write(1, a, 10);
+    printf("%s\n", a);
     return 0;
 }

@@ -12,8 +12,7 @@ compare_string:
         mov     bl, byte[rsi]
 
         cmp     al, bl
-
-        je
+        je      compare_string
 
         inc     rdi
         inc     rsi

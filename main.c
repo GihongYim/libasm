@@ -10,7 +10,10 @@ int main(void)
     printf("%s\n", dst);
     free(dst);
     char a[] = "qwer";
-    ft_write(1, a, 10);
-    printf("%s\n", a);
+    ft_write(1, a, 4);
+    ft_write(1, "\n", 1);
+    char *b = malloc(sizeof(char) * 100);
+    ft_read(0, b, 10);
+    printf("%s", b);
     return 0;
 }

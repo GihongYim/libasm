@@ -8,7 +8,8 @@ LDFLAG = -macosx_version_min 10.15 -e main
 
 SRCS = ft_strlen.s \
 		ft_strcpy.s \
-		ft_write.s
+		ft_write.s \
+		ft_read.s
 OBJS = $(SRCS:.s=.o)
 
 AR = ar
